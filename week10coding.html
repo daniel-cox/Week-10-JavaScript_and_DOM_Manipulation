@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Book A Car Wash</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container">
+    <br />
+    <div class="card">
+      <div class="card-container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-carWash">Book Your Car Wash</label>
+              <input type="date" class="form-control" id="new-carWash" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="washNotes">CarWash Notes</label>
+            <input
+              type="text"
+              class="form-control"
+              id="washNotes"
+              placeholder="Add notes here"
+            />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="washPrice">Car Wash Price</label>
+            <input
+              type="number"
+              class="form-control"
+              id="washPrice"
+              placeholder="Enter Car Wash Price"
+            />
+          </div>
+        </div>
+        <div>
+          <br />
+          <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <br />
+      <table class="table table-primary" id="list">
+        <tr>
+          <th>Car #</th>
+          <th>Car Wash Date</th>
+          <th>Car Wash Notes</th>
+          <th>Car Wash Price</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./week10coding.js"></script>
+  </body>
+</html>

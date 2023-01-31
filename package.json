@@ -1,0 +1,24 @@
+{
+  "name": "week-10-javascript_and_dom_manipulation",
+  "version": "1.0.0",
+  "description": "\"# Week-10-JavaScript_and_DOM_Manipulation\"",
+  "main": "week10coding.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-cox/Week-10-JavaScript_and_DOM_Manipulation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-cox/Week-10-JavaScript_and_DOM_Manipulation/issues"
+  },
+  "homepage": "https://github.com/daniel-cox/Week-10-JavaScript_and_DOM_Manipulation#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3"
+  }
+}
