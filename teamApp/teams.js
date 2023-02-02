@@ -1,3 +1,4 @@
+console.log("is this working?");
 class Member {
   constructor(name, position) {
     this.name = name;
@@ -5,7 +6,7 @@ class Member {
   }
 }
 
-class team {
+class Team {
   constructor(id, name) {
     this.id = id;
     this.name = name;
@@ -25,11 +26,12 @@ class team {
 let teams = [];
 let teamId = 0;
 
-onClick("new-team"),
-  () => {
-    teams.push(new team(teamId++, getValue("new-team-name")));
-    drawDOM();
-  };
+onClick("new-team", () => {
+  console.log("clicking create button");
+  teams.push(new Team(teamId++, getValue("new-team-name")));
+  console.log(teams);
+  drawDOM();
+});
 
 function onClick(id, action) {
   let element = document.getElementById(id);
@@ -38,24 +40,30 @@ function onClick(id, action) {
 }
 
 function getValue(id) {
+  console.log("what is this?", id);
   return document.getElementById(id).value;
 }
 
 function drawDOM() {
+  console.log("working?");
   let teamDiv = document.getElementById("teams");
   clearElement(teamDiv);
   //clear the team div
-  for (team of teams) {
+  for (let team of teams) {
+    console.log("logging team", team);
     //iterate over the teams
     let table = createTeamTable(team);
+    console.log("log table", table);
     //create a table for each team
     let title = document.createElement("h2");
-    title.innderHTML = team.name;
+    console.log("zzzz", team.name);
+    title.innerHTML = team.name;
     title.appendChild(createDeleteTeamButton(team));
     //create a delete button so you can delete each team
     teamDiv.appendChild(title);
     teamDiv.appendChild(table);
-    for (memeber of team.members) {
+    for (let member of team.members) {
+      console.log(member, "testing");
       createMemberRow(team, table, member);
       //add all members to the team
     }
@@ -63,11 +71,12 @@ function drawDOM() {
 }
 
 function createMemberRow(team, table, member) {
+  console.log("log team/member", team, member);
   let row = table.insertRow(2);
-  row.insertCell(0).innderHTML = member.name;
-  row.insertCell(1).innderHTML = member.position;
+  row.insertCell(0).innerHTML = member.name;
+  row.insertCell(1).innerHTML = member.position;
   let actions = row.insertCell(2);
-  action.appendChild(createDeleteRowButton(team, member));
+  actions.appendChild(createDeleteRowButton(team, member));
 }
 
 function createDeleteRowButton(team, member) {
@@ -76,8 +85,7 @@ function createDeleteRowButton(team, member) {
   btn.innerHTML = "Delete";
   btn.onClick = () => {
     let index = team.member.indexOf(member);
-    team.member.spl;
-    ice(index, 1);
+    team.member.splice(index, 1);
     drawDOM();
   };
 }
@@ -102,21 +110,24 @@ function createMemberButton(team) {
     team.members.push(
       new Member(
         getValue(`name-input-${team.id}`),
-        getValue(`p osition-input-${team.id}`)
+        getValue(`position-input-${team.id}`)
       )
     );
+    drawDOM();
+    console.log("log team - create member button", team);
   };
   return btn;
 }
 
 function createTeamTable(team) {
+  console.log("create team", team);
   let table = document.createElement("table");
   table.setAttribute("class", "table table-dark table-striped");
   let row = table.insertRow(0);
   let nameColumn = document.createElement("th");
   let positionColumn = document.createElement("th");
   nameColumn.innerHTML = "Name";
-  positionColumn.innderHTML = "Position";
+  positionColumn.innerHTML = "Position";
   row.appendChild(nameColumn);
   row.appendChild(positionColumn);
   let formRow = table.insertRow(1);
@@ -142,7 +153,8 @@ function createTeamTable(team) {
 }
 
 function clearElement(element) {
+  console.log(element);
   while (element.firstChild) {
-    element.removeChild(elember.firstChild);
+    element.removeChild(element.firstChild);
   }
 }
