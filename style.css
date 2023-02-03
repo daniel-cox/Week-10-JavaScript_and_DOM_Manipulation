@@ -16,3 +16,7 @@ span {
 .container {
   margin-top: 20em;
 }
+
+.textCenter {
+  text-align: center;
+}
