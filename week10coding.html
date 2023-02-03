@@ -17,21 +17,27 @@
   </head>
   <body class="container">
     <!-- Begin Font Code-->
-    <span style="color: red">L</span><span style="color: orange">o</span
-    ><span style="color: yellow">r</span><span style="color: green">n</span
-    ><span style="color: blue">a</span> <span style="color: purple">S</span
-    ><span style="color: pink">h</span><span style="color: lightblue">o</span
-    ><span style="color: lightgreen">r</span
-    ><span style="color: lightyellow">e</span> <span style="color: red">S</span
-    ><span style="color: orange">u</span><span style="color: yellow">d</span
-    ><span style="color: green">s</span> <span style="color: blue">N</span
-    ><span style="color: purple">'</span> <span style="color: pink">D</span
-    ><span style="color: lightblue">u</span
-    ><span style="color: lightgreen">d</span
-    ><span style="color: lightyellow">s</span> <span style="color: red">C</span
-    ><span style="color: orange">a</span><span style="color: yellow">r</span>
-    <span style="color: green">W</span><span style="color: blue">a</span
-    ><span style="color: purple">s</span><span style="color: pink">h</span>
+    <div class="textCenter">
+      <span style="color: red">L</span><span style="color: orange">o</span
+      ><span style="color: yellow">r</span><span style="color: green">n</span
+      ><span style="color: blue">a &nbsp;</span>
+      <span style="color: purple">S</span><span style="color: pink">h</span
+      ><span style="color: lightblue">o</span
+      ><span style="color: lightgreen">r</span
+      ><span style="color: lightyellow">e &nbsp;</span>
+      <span style="color: red">S</span>&nbsp;<span style="color: orange">u</span
+      ><span style="color: yellow">d</span
+      ><span style="color: green">s &nbsp;</span>
+      <span style="color: blue">N</span
+      ><span style="color: purple">' &nbsp;</span>
+      <span style="color: pink">D</span><span style="color: lightblue">u</span
+      ><span style="color: lightgreen">d</span
+      ><span style="color: lightyellow">s &nbsp;</span>
+      <span style="color: red">C</span><span style="color: orange">a</span
+      ><span style="color: yellow">r &nbsp;</span>
+      <span style="color: green">W</span><span style="color: blue">a</span
+      ><span style="color: purple">s</span><span style="color: pink">h</span>
+    </div>
     <!-- End Font Code -->
 
     <div class="card">
@@ -39,8 +45,10 @@
       <div class="card-container">
         <div class="row mt-4">
           <div class="col-sm">
-            <div class="form-group">
-              <label for="washNotes">CarWash Notes</label>
+            <div class="form-group ps-3 pe-3">
+              <label for="washNotes"
+                ><p class="fw-bold">CarWash Notes</p></label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -52,14 +60,18 @@
         </div>
         <div class="row mt-4">
           <div class="col-sm">
-            <div class="form-group">
-              <label for="new-carWash">Book Your Car Wash</label>
+            <div class="form-group ps-3">
+              <label for="new-carWash"
+                ><p class="fw-bold">Book Your Car Wash</p></label
+              >
               <input type="date" class="form-control" id="new-carWash" />
             </div>
           </div>
           <div class="col-sm">
-            <div class="form-group">
-              <label for="washPrice">Car Wash Price</label>
+            <div class="form-group pe-3">
+              <label for="washPrice"
+                ><p class="fw-bold">Car Wash Price</p></label
+              >
               <input
                 type="number"
                 class="form-control"
@@ -69,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="row mr-3">
+        <div class="row mr-3 ps-1 pe-1 pb-2">
           <div class="col-sm mt-4">
             <button id="add" class="btn btn-primary form-control">
               Schedule Wash

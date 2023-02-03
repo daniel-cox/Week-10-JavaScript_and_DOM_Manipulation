@@ -1,10 +1,21 @@
 body {
   background-color: #44ac01;
+  background-image: url("./Water-Bubbles.png") ;
+  background-size
+  background-repeat: no-repeat;
 }
 
 span {
   color: #e31958;
-  font-size: 4em;
+  font-size: 3em;
   font-family: "Toys R Us 2007", sans-serif;
   text-shadow: 3px 3px 4px #000;
+}
+
+.container{
+    margin-top: 10em;
+}
+
+.textCenter{
+    text-align: center;
 }
