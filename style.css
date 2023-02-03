@@ -1,0 +1,10 @@
+body {
+  background-color: #44ac01;
+}
+
+span {
+  color: #e31958;
+  font-size: 4em;
+  font-family: "Toys R Us 2007", sans-serif;
+  text-shadow: 3px 3px 4px #000;
+}

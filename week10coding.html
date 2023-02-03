@@ -9,12 +9,35 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      href="https://fonts.cdnfonts.com/css/toys-r-us-2007"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="container">
-    <br />
+    <!-- Begin Font Code-->
+    <span style="color: red">L</span><span style="color: orange">o</span
+    ><span style="color: yellow">r</span><span style="color: green">n</span
+    ><span style="color: blue">a</span> <span style="color: purple">S</span
+    ><span style="color: pink">h</span><span style="color: lightblue">o</span
+    ><span style="color: lightgreen">r</span
+    ><span style="color: lightyellow">e</span> <span style="color: red">S</span
+    ><span style="color: orange">u</span><span style="color: yellow">d</span
+    ><span style="color: green">s</span> <span style="color: blue">N</span
+    ><span style="color: purple">'</span> <span style="color: pink">D</span
+    ><span style="color: lightblue">u</span
+    ><span style="color: lightgreen">d</span
+    ><span style="color: lightyellow">s</span> <span style="color: red">C</span
+    ><span style="color: orange">a</span><span style="color: yellow">r</span>
+    <span style="color: green">W</span><span style="color: blue">a</span
+    ><span style="color: purple">s</span><span style="color: pink">h</span>
+    <!-- End Font Code -->
+
     <div class="card">
+      <h1 class="mx-auto"></h1>
       <div class="card-container">
-        <div class="row">
+        <div class="row mt-4">
           <div class="col-sm">
             <div class="form-group">
               <label for="washNotes">CarWash Notes</label>
@@ -27,8 +50,7 @@
             </div>
           </div>
         </div>
-        <br />
-        <div class="row">
+        <div class="row mt-4">
           <div class="col-sm">
             <div class="form-group">
               <label for="new-carWash">Book Your Car Wash</label>
@@ -46,14 +68,17 @@
               />
             </div>
           </div>
-          <div></div>
-          <br />
-          <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+        <div class="row mr-3">
+          <div class="col-sm mt-4">
+            <button id="add" class="btn btn-primary form-control">
+              Schedule Wash
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="table-responsive">
-      <br />
+    <div class="table-responsive mt-4">
       <table class="table table-primary" id="list">
         <tr>
           <th>Car #</th>
@@ -64,7 +89,7 @@
         </tr>
       </table>
     </div>
-
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./week10coding.js"></script>
   </body>
