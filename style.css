@@ -1,8 +1,9 @@
 body {
   background-color: #44ac01;
-  background-image: url("./Water-Bubbles.png") ;
-  background-size
+  background-image: url("./Water-Bubbles.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 span {
@@ -12,10 +13,6 @@ span {
   text-shadow: 3px 3px 4px #000;
 }
 
-.container{
-    margin-top: 10em;
-}
-
-.textCenter{
-    text-align: center;
+.container {
+  margin-top: 20em;
 }
