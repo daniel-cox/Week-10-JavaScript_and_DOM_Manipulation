@@ -1,6 +1,6 @@
 let id = 0;
 
-//NOTE -c
+//NOTE -
 document.getElementById("add").addEventListener("click", () => {
   id++; //incrementing the id at the beginning of the function
 
@@ -23,17 +23,16 @@ document.getElementById("add").addEventListener("click", () => {
   row.insertCell(4).innerHTML = `
 
   <button type="button" id ="deleteCar-${id}" class="btn btn-danger">Delete</button>`;
-  //NOTE -clears the input field
+  //NOTE - sets the 'value' to an empty string, whch clears the value of the input with the ID 'new-carWash'
   document.getElementById("new-carWash").value = "";
 
-  //NOTE -
+  //NOTE -   ads an event listener
   document
     .getElementById(`deleteCar-${id}`)
     .addEventListener("click", (event) => {
       //console logs the test code
-      console.log("logging event", event.target.parentNode.parentNode);
-      console.log("deleting row..", `item-${id}`);
-      //NOTE -variable for deleting the row
+      // console.log("logging event", event.target.parentNode.parentNode);
+      // console.log("deleting row..", `item-${id}`);
 
       //NOTE - Looks at the event listener, the target property, the parent node (td) , and the nested parent node (tr)
       let row = event.target.parentNode.parentNode;
